@@ -1,5 +1,7 @@
 const faker = require('faker')
 const lodash = require('lodash')
+const express = require('express')
+const app = express()
 
 const users = lodash.times(100, (n)=>{
     return{
@@ -11,5 +13,13 @@ const users = lodash.times(100, (n)=>{
     }
 })
 
+app.get('/users', (req, res)=> {
+    res.send(users)
+})
 
-console.log(users)
+const PORT=222
+
+app.listen(process.env.PORT || PORT, () => {
+    console.log(`Express running on port ${PORT}`)
+}
+)
