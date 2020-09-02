@@ -19,6 +19,7 @@
   "homepage": "https://github.com/aremu-smog/faker-lodash-api#readme",
   "dependencies": {
     "express": "^4.17.1",
-    "faker": "^5.1.0"
+    "faker": "^5.1.0",
+    "lodash": "^4.17.20"
   }
 }

@@ -1,8 +1,15 @@
 const faker = require('faker')
+const lodash = require('lodash')
 
-const firstName = faker.fake("{{name.firstName}}")
-const lastName = faker.fake("{{name.lastName}}")
-const gender = faker.fake("{{name.gender}}")
-const phoneNumber = faker.fake("{{phone.phoneNumber}}")
+const users = lodash.times(100, (n)=>{
+    return{
+        id: n,
+        firstName: faker.fake("{{name.firstName}}"),
+        lastName: faker.fake("{{name.lastName}}"),
+        gender: faker.fake("{{name.gender}}"),
+        phoneNumber: faker.fake("{{phone.phoneNumber}}")
+    }
+})
 
-console.log(firstName, lastName, gender, phoneNumber)
+
+console.log(users)
