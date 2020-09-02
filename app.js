@@ -1,15 +1,10 @@
-const faker = require('faker')
-const lodash = require('lodash')
+/*
+Since this repository was created for learning purposes,
+the codes are in branches
 
-const users = lodash.times(100, (n)=>{
-    return{
-        id: n,
-        firstName: faker.fake("{{name.firstName}}"),
-        lastName: faker.fake("{{name.lastName}}"),
-        gender: faker.fake("{{name.gender}}"),
-        phoneNumber: faker.fake("{{phone.phoneNumber}}")
-    }
-})
+You can switch to any of the branches listed below to see the code
 
-
-console.log(users)
+- single_user_data
+- multiple_users_data
+- data_endpoint
+*/
